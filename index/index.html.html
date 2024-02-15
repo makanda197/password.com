@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" >
+        <title>show password</title>
+        <link rel="stylesheet" href="personal.css">
+    </head>
+    <body>
+     <div class="input-box">
+        <p>Input password:</p>
+        <input type="password" placeholder="password" id="password">
+        <img src="eye-close.png"  id="eyeicon"><br><br>
+        
+
+     <script>
+
+        let eyeicon = document.getElementById("eyeicon");
+        let password = document.getElementById("password");
+
+        eyeicon.onclick = function(){
+            if(password.type == "password"){
+                password.type = "text";
+                eyeicon.src = "eye-open.png";
+            }else{
+                password.type = "password";
+                eyeicon.src = "eye-open.png";
+            }
+        }
+     </script>
+
+    </body>
+</html>
